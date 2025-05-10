@@ -1,11 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reverse String</title>    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reverse Text Tool</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding-top: 50px;
+    }
+    input {
+      padding: 10px;
+      font-size: 16px;
+      width: 300px;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    #output {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .bold {
+      font-weight: bold;
+    }
+    .error {
+      color: red;
+    }
+  </style>
 </head>
 <body>
-<script src="script.js"></script>
+
+  <h1>Reverse Text Tool</h1>
+  <input type="text" id="textInput" placeholder="Type your word..." />
+  
+  <div>
+    <button id="reverseBtn" onclick="reverseText()" disabled>Reverse</button>
+    <button onclick="clearAll()">Clean</button>
+  </div>
+  
+  <div id="output"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
